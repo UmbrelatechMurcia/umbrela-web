@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umbrela Tech - Consultoría Informática & Ciberseguridad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0b0f19;
+            --bg-card: #151c2e;
+            --accent-blue: #0088ff;
+            --text-main: #f0f4f8;
+            --text-muted: #94a3b8;
+            --border-color: #2a364f;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { background-color: var(--bg-dark); color: var(--text-main); line-height: 1.6; }
+
+        header {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 20px 8%; background: rgba(11, 15, 25, 0.9);
+            position: fixed; width: 100%; top: 0; z-index: 1000; border-bottom: 1px solid var(--border-color);
+        }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--text-main); text-transform: uppercase; }
+        .logo span { color: var(--accent-blue); }
+        .btn-cta {
+            background: var(--accent-blue); color: #fff; padding: 10px 22px;
+            text-decoration: none; border-radius: 6px; font-weight: 600; transition: 0.3s;
+        }
+        .btn-cta:hover { opacity: 0.9; }
+
+        .hero {
+            padding: 160px 8% 80px; text-align: center;
+            background: radial-gradient(circle at center, #112240 0%, var(--bg-dark) 70%);
+        }
+        .hero h1 { font-size: 2.8rem; margin-bottom: 15px; }
+        .hero p { font-size: 1.2rem; color: var(--text-muted); max-width: 700px; margin: 0 auto 30px; }
+
+        .services { padding: 80px 8%; }
+        .section-title { text-align: center; font-size: 2rem; margin-bottom: 50px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        
+        .card {
+            background: var(--bg-card); padding: 30px; border-radius: 12px;
+            border: 1px solid var(--border-color); transition: transform 0.3s;
+        }
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { color: var(--accent-blue); margin-bottom: 15px; font-size: 1.3rem; }
+        .card ul { list-style: none; margin-top: 15px; }
+        .card ul li { color: var(--text-muted); margin-bottom: 8px; position: relative; padding-left: 20px; }
+        .card ul li::before { content: "✓"; position: absolute; left: 0; color: var(--accent-blue); }
+
+        .contact-section {
+            padding: 80px 8%; background: var(--bg-card); border-top: 1px solid var(--border-color);
+            display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 40px;
+        }
+        .contact-info { flex: 1; min-width: 300px; }
+        .contact-form { flex: 1; min-width: 300px; display: flex; flex-direction: column; gap: 15px; }
+        .contact-form input, .contact-form textarea {
+            width: 100%; padding: 12px; background: var(--bg-dark); border: 1px solid var(--border-color);
+            color: #fff; border-radius: 6px; outline: none;
+        }
+        .contact-form button {
+            background: var(--accent-blue); color: #fff; border: none; padding: 14px;
+            font-weight: 600; border-radius: 6px; cursor: pointer; transition: 0.3s;
+        }
+
+        footer { text-align: center; padding: 25px; border-top: 1px solid var(--border-color); color: var(--text-muted); font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Umbrela <span>Tech</span></div>
+        <a href="#contacto" class="btn-cta">Contactar</a>
+    </header>
+
+    <section class="hero">
+        <h1>Infraestructura Informática Segura y Eficiente</h1>
+        <p>Soluciones integrales de Ciberseguridad, Redes de alta velocidad y Mantenimiento Informático para proteger y optimizar tu empresa.</p>
+        <a href="#contacto" class="btn-cta">Solicitar Auditoría Informática</a>
+    </section>
+
+    <section class="services">
+        <h2 class="section-title">Nuestros ServiciosEspecializados</h2>
+        <div class="grid">
+            
+            <div class="card">
+                <h3>🛡️ Ciberseguridad Corporativa</h3>
+                <p>Protegemos la información sensible de tu negocio contra amenazas avanzadas y ataques de ingeniería social.</p>
+                <ul>
+                    <li>Sophos Email Protection (Anti-Phishing)</li>
+                    <li>Seguridad en la nube y Endpoints</li>
+                    <li>Protección contra Ransomware</li>
+                    <li>Auditorías y simulaciones de amenazas</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>🌐 Redes y Comunicaciones</h3>
+                <p>Diseño e implementación de infraestructuras de red estables, rápidas y totalmente seguras.</p>
+                <ul>
+                    <li>Instalación de redes cableadas e inalámbricas (Wi-Fi)</li>
+                    <li>Configuración de Firewalls y Routers VPN</li>
+                    <li>Segmentación de redes para empresas</li>
+                    <li>Monitoreo de tráfico y optimización</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>💻 Mantenimiento Preventivo</h3>
+                <p>Mantenemos el hardware y software de tus equipos en óptimas condiciones para evitar paradas operativas.</p>
+                <ul>
+                    <li>Limpieza física interna y cambio de pasta térmica</li>
+                    <li>Optimización de sistemas operativos</li>
+                    <li>Copias de seguridad avanzadas (Backups)</li>
+                    <li>Soporte técnico remoto y presencial</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact-section" id="contacto">
+        <div class="contact-info">
+            <h2>Hablemos sobre la seguridad de tu empresa</h2>
+            <p style="color: var(--text-muted); margin-top: 10px;">Déjanos tus datos y un especialista de Umbrela Tech analizará la infraestructura informática de tu negocio sin compromiso.</p>
+        </div>
+        <form class="contact-form">
+            <input type="text" placeholder="Nombre completo" required>
+            <input type="email" placeholder="Correo electrónico corporativo" required>
+            <input type="tel" placeholder="Teléfono de contacto" required>
+            <textarea rows="4" placeholder="¿En qué servicio estás interesado?" required></textarea>
+            <button type="submit">Enviar Solicitud</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Umbrela Tech - Consultoría Informática. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
