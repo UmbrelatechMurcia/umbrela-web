@@ -18,16 +18,14 @@
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
         body { background-color: var(--bg-dark); color: var(--text-main); line-height: 1.6; }
 
-        <header style="height: 50px; width: auto; max-width: 250px;"; justify-content: space-between; align-items: center; padding: 15px 8%; background: rgba(11, 15, 25, 0.95); position: fixed; width: 100%; top: 0; z-index: 1000; border-bottom: 1px solid var(--border-color);">
-        <img src="logo-umbrela.png"...>
-        <div class="logo">
-            <a href="#" style="text-decoration: none; display: flex; align-items: center;">
-                <img src="logo-umbrela.png"...>
-                <img src="logo-umbrela.png" alt="Umbrela Tech - Asesoria IT" style="height: 50px; width: auto; max-width: 250px;">
-            </a>
-        </div>
-        <a href="#contacto" class="btn-cta">Contactar</a>
-    </header>
+<header style="display: flex; justify-content: space-between; align-items: center; padding: 15px 8%; background: rgba(11, 15, 25, 0.95); position: fixed; width: 100%; top: 0; z-index: 1000; border-bottom: 1px solid var(--border-color);">
+    <div class="logo">
+        <a href="#" style="text-decoration: none; display: flex; align-items: center;">
+            <img src="logo-umbrela.png" alt="Umbrela Tech" style="height: 50px; width: auto; max-width: 250px;">
+        </a>
+    </div>
+    <a href="#contacto" class="btn-cta">Contactar</a>
+</header>
         .logo { font-size: 1.5rem; font-weight: 700; color: var(--text-main); text-transform: uppercase; }
         .logo span { color: var(--accent-blue); }
         .btn-cta {
@@ -133,15 +131,27 @@
     <h2>Hablemos sobre la seguridad de tu empresa</h2>
     <p style="color: var(--text-muted); margin-top: 10px;">Déjanos tus datos y un especialista de Umbrela Tech analizará la infraestructura informática de tu negocio sin compromiso.</p>
     
-    <!-- Enlace de teléfono cliqueable -->
-    <p style="margin-top: 20px; font-size: 1.1rem; font-weight: 600;">
-        📞 Llámanos directamente: 
-        <a href="tel:+34670915283" style="color: var(--accent-blue); text-decoration: none;">
+    <!-- Correo electrónico -->
+    <p style="margin-top: 25px; font-size: 1.1rem;">
+        ✉️ Correo electrónico: 
+        <a href="mailto:info@umbrelasse.com" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">
+            info@umbrelasse.com
+        </a>
+    </p>
+
+    <!-- Teléfono -->
+    <p style="margin-top: 10px; font-size: 1.1rem;">
+        📞 Llámanos: 
+        <a href="tel:+34670915283" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">
             +34 670 91 52 83
-<p style="margin-top: 10px; font-size: 1.1rem;">
-    ✉️ Correo electrónico: 
-    <a href="mailto:info@umbrelasse.com" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">
-        info@umbrelasse.com
+        </a>
+    </p>
+
+    <!-- WhatsApp -->
+    <p style="margin-top: 10px; font-size: 1.1rem;">
+        💬 WhatsApp: 
+        <a href="https://wa.me/34670915283?text=Hola,%20me%20gustaría%20más%20información" target="_blank" style="color: #25D366; text-decoration: none; font-weight: 600;">
+            Enviar mensaje directo
         </a>
     </p>
 </div>
