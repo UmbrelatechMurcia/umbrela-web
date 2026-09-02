@@ -18,11 +18,16 @@
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
         body { background-color: var(--bg-dark); color: var(--text-main); line-height: 1.6; }
 
-        header {
-            display: flex; justify-content: space-between; align-items: center;
-            padding: 20px 8%; background: rgba(11, 15, 25, 0.9);
-            position: fixed; width: 100%; top: 0; z-index: 1000; border-bottom: 1px solid var(--border-color);
-        }
+        <header style="height: 50px; width: auto; max-width: 250px;"; justify-content: space-between; align-items: center; padding: 15px 8%; background: rgba(11, 15, 25, 0.95); position: fixed; width: 100%; top: 0; z-index: 1000; border-bottom: 1px solid var(--border-color);">
+        <img src="logo-umbrela.png"...>
+        <div class="logo">
+            <a href="#" style="text-decoration: none; display: flex; align-items: center;">
+                <!-- Enlace a la imagen optimizada (logo-umbrela.png) -->
+                <img src="logo-umbrela.png" alt="Umbrela Tech - Consultoría Informática" style="height: 50px; width: auto; max-width: 250px;">
+            </a>
+        </div>
+        <a href="#contacto" class="btn-cta">Contactar</a>
+    </header>
         .logo { font-size: 1.5rem; font-weight: 700; color: var(--text-main); text-transform: uppercase; }
         .logo span { color: var(--accent-blue); }
         .btn-cta {
@@ -136,6 +141,12 @@
         </a>
     </p>
 </div>
+<p style="margin-top: 10px; font-size: 1.1rem;">
+    ✉️ Correo electrónico: 
+    <a href="mailto:jesus.ojeda@cibernetica.net" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">
+        jesus.ojeda@cibernetica.net
+    </a>
+</p>
         <form class="contact-form">
             <input type="text" placeholder="Nombre completo" required>
             <input type="email" placeholder="Correo electrónico corporativo" required>
