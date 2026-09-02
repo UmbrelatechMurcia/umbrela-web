@@ -18,14 +18,17 @@
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
         body { background-color: var(--bg-dark); color: var(--text-main); line-height: 1.6; }
 
-<header style="display: flex; justify-content: space-between; align-items: center; padding: 15px 8%; background: rgba(11, 15, 25, 0.95); position: fixed; width: 100%; top: 0; z-index: 1000; border-bottom: 1px solid var(--border-color);">
-    <div class="logo">
-        <a href="#" style="text-decoration: none; display: flex; align-items: center;">
-            <img src="logo-umbrela.png" alt="Umbrela Tech" style="height: 50px; width: auto; max-width: 250px;">
-        </a>
-    </div>
-    <a href="#contacto" class="btn-cta">Contactar</a>
-</header>
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 15px 8%; background: rgba(11, 15, 25, 0.95); position: fixed; width: 100%; top: 0; z-index: 1000; border-bottom: 1px solid var(--border-color);">
+        <div class="logo">
+            <a href="#" style="text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <!-- Cargamos la imagen logo_full.png con un tamaño controlado -->
+                <img src="logo_full.png" alt="Umbrela Tech - Asesor IT" style="height: 50px; width: auto; max-width: 250px;">
+                <!-- Si quieres, puedes dejar el texto al lado, o quitarlo -->
+                <!-- <span style="font-size: 1.2rem; font-weight: 600; color: #fff;">Asesor IT</span> -->
+            </a>
+        </div>
+        <a href="#contacto" class="btn-cta">Contactar</a>
+    </header>
         .logo { font-size: 1.5rem; font-weight: 700; color: var(--text-main); text-transform: uppercase; }
         .logo span { color: var(--accent-blue); }
         .btn-cta {
